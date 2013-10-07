@@ -59,6 +59,34 @@
 	<properties>
 		<rootDir>${project.basedir}</rootDir>
 	</properties>
+	<repositories>
+		<repository>
+			<snapshots>
+				<enabled>true</enabled>
+				<!--<updatePolicy>never</updatePolicy> -->
+				<checksumPolicy>ignore</checksumPolicy>
+			</snapshots>
+			<id>snapshots</id>
+			<name>libs-snapshots</name>
+			<url>http://sonar.cht:8081/artifactory/repo</url>
+		</repository>
+		<repository>
+			<id>JBoss</id>
+			<name>JBoss</name>
+			<url>https://repository.jboss.org/nexus/content/groups/public-jboss/</url>
+		</repository>
+	</repositories>
+
+	<pluginRepositories>
+		<pluginRepository>
+			<snapshots>
+				<enabled>true</enabled>
+			</snapshots>
+			<id>snapshots</id>
+			<name>plugins-snapshots</name>
+			<url>http://sonar.cht:8081/artifactory/repo</url>
+		</pluginRepository>
+	</pluginRepositories>
 
 	<profiles>
 		<!-- 
